@@ -1,5 +1,5 @@
 <div class="main-container">
-  <div class="about">
+  <div class="card-about">
     <h2>À propos de moi</h2>
     <div class="presentation">
       <div class="paragraph">
@@ -11,11 +11,11 @@
     </div>
   </div>
 
-  <div class="skills">
+  <div class="card-about">
     <h2>Compétences</h2>
     <div class="presentation">
       <div class="cv">
-        <%= image_tag "CV.jpg", alt: "CV", class: "photo" %>
+        <%= image_tag "CV.jpg", alt: "CV", id: "cv" %>
       </div>
       <div class="assets">
         <h3>Atouts</h3>
@@ -35,6 +35,19 @@
         <h3>Pourquoi moi ?</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem sint, quidem dolore deleniti officiis veniam quasi ratione officia excepturi voluptates sit sequi quaerat nulla distinctio ipsa nihil quam voluptate impedit.</p>
       </div>
+    </div>
+  </div>
+
+  <div class="card-about">
+    <h2>Réalisations</h2>
+    <div class="caroussel">
+      <%= image_tag "photo_profile.jpg", alt: "Caroussel", id: "caroussel" %>
+    </div>
+    <div class="description">
+      <h3>Best United</h3>
+        <p>Plateforme de vente de sneakers pour encourager le commerce local.</p>
+        <p>Gestion des stocks pour les commerçants.</p>
+        <p>Août 2024</p>
     </div>
   </div>
 
