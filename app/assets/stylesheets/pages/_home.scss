@@ -38,14 +38,29 @@ body{
   width: 250px;
 }
 
+.description h3 {
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+.description p {
+  margin: 0;
+  padding: 0;
+}
+
+.links-social ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+
 #cv {
   width: 400px;
 }
 
-.description h3, p {
-  margin: 8px 0 0 0;
-  padding: 0;
-}
 #caroussel {
   width: 800px;
   height: 300px;
