@@ -1,1 +1,67 @@
 // Specific CSS for your home-page
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card-about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 50%;
+  padding: 16px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.card-about .photo {
+  width: 250px;
+}
+
+.description h3 {
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+.description p {
+  margin: 0;
+  padding: 0;
+}
+
+.links-social ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+
+#cv {
+  width: 400px;
+}
+
+#caroussel {
+  width: 800px;
+  height: 300px;
+}
