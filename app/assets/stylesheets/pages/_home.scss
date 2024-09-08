@@ -56,6 +56,14 @@ body{
   margin-top: 16px;
 }
 
+.top-btn svg {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
 #cv {
   width: 400px;
