@@ -24,6 +24,8 @@ body{
 .presentation {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   margin-top: 16px;
 }
@@ -31,11 +33,16 @@ body{
 .paragraph {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  height: 100%;
+}
+
+.paragraph p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .card-about .photo {
-  width: 250px;
+  width: 45%;
 }
 
 .description h3 {
@@ -48,6 +55,18 @@ body{
   padding: 0;
 }
 
+.assets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.assets p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 .links-social ul{
   display: flex;
   justify-content: center;
@@ -56,9 +75,6 @@ body{
   padding-left: 0;
   margin-top: 16px;
 }
-
-
-
 
 .top-btn svg {
   width: 64px;
@@ -84,4 +100,8 @@ a.top-btn:hover {
 #caroussel {
   width: 800px;
   height: 300px;
+}
+
+.last-parag {
+  margin: 0;
 }
