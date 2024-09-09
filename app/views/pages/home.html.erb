@@ -1,5 +1,9 @@
 <div class="main-container">
-  <div class="card-about">
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+</div>
+
+  <div class="card-about" id='about_section'>
     <h2>À propos de moi</h2>
     <div class="presentation">
       <div class="paragraph">
@@ -11,7 +15,7 @@
     </div>
   </div>
 
-  <div class="card-about">
+  <div class="card-about" id='presentation_section'>
     <h2>Compétences</h2>
     <div class="presentation">
       <div class="cv">
@@ -20,26 +24,22 @@
       </div>
       <div class="assets">
         <h3>Atouts</h3>
-        <ul>
-          <li>Lorem ipsum dolor sit amet!</li>
-          <li>Lorem ipsum dolor sit amet!</li>
-          <li>Lorem ipsum dolor sit amet!</li>
-        </ul>
+          <p>Lorem ipsum dolor sit amet!</p>
+          <p>Lorem ipsum dolor sit amet!</p>
+          <p>Lorem ipsum dolor sit amet!</p>
 
         <h3>Développement Web</h3>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>HTML/CSS/Javascript</li>
-          <li>PostgreSQL</li>
-        </ul>
+          <p>Ruby on Rails</p>
+          <p>HTML/CSS/Javascript</p>
+          <p>PostgreSQL</p>
 
         <h3>Pourquoi moi ?</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem sint, quidem dolore deleniti officiis veniam quasi ratione officia excepturi voluptates sit sequi quaerat nulla distinctio ipsa nihil quam voluptate impedit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing ept. Exercitationem sint, quidem dolore deleniti officiis veniam quasi ratione officia excepturi voluptates sit sequi quaerat nulla distinctio ipsa nihil quam voluptate impedit.</p>
       </div>
     </div>
   </div>
 
-  <div class="card-about">
+  <div class="card-about" id="projects_section">
     <h2>Réalisations</h2>
     <div class="caroussel">
       <%= image_tag "photo_profile.jpg", alt: "Caroussel", id: "caroussel" %>
@@ -52,22 +52,24 @@
     </div>
   </div>
 
-  <div class="card-about">
+  <div class="card-about" id="contact_section">
     <h2>Contact</h2>
     <div class="form">
 
     </div>
     <div class="links-social">
       <ul>
-        <div class="logo-social"><li><i class="fa-brands fa-square-github fa-2xl"></i></li></div>
-        <div class="logo-social"><li><i class="fa-brands fa-linkedin fa-2xl"></i></li></div>
+        <div class="logo-social">
+          <%= link_to "https://github.com/KevRo69" do %>
+            <li><i class="fa-brands fa-square-github fa-2xl"></i></li>
+          <% end %>
+        </div>
+        <div class="logo-social">
+          <%= link_to "https://www.linkedin.com/in/k%C3%A9vin-rossi-539a72150/" do %>
+            <li><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+          <% end %>
+        </div>
       </ul>
     </div>
   </div>
 </div>
-
-<%= link_to '#', class:"top-btn" do%>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v5.69a.75.75 0 0 0 1.5 0v-5.69l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z" clip-rule="evenodd" />
-  </svg>
-<% end %>
