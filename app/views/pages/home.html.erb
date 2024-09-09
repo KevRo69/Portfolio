@@ -25,13 +25,14 @@
     <div class="presentation">
       <div class="cv">
         <%= image_tag "CV.jpg", alt: "CV", id: "cv" %>
+        <%= link_to 'Télécharger le CV', download_path, download: 'CV_Kévin_Rossi_FR.pdf', class:"btn" %>
       </div>
       <div class="assets">
 
         <h3>Développement Web</h3>
           <p><strong>Backend :</strong>  Ruby on Rails</p>
-          <p><strong>Frontend :</strong> HTML/CSS/Javascript</p>
-          <p><strong>DB :</strong> PostgreSQL/SQLite</p>
+          <p><strong>Frontend :</strong> HTML / CSS / Stimulus.js</p>
+          <p><strong>DB :</strong> PostgreSQL / SQLite</p>
 
         <h3>Atouts</h3>
           <p><strong>Gestion du temps : </strong>Organisé</p>
@@ -39,23 +40,25 @@
           <p><strong>Curieux :</strong> Prêt à apprendre</p>
 
         <h3>Pourquoi moi ?</h3>
-        <p class="last-parag">Mes expériences professionnelles m'ont apprises beaucoup tant sur le <strong>suivi de projet</strong> avec des <strong>deadlines</strong> serrées que sur
-        la <strong>programmation</strong> lors de mon passage dans le nucléaire. Elles ont fait de moi quelqu'un de <strong>polyvalent</strong> et <strong>qui s'adapte rapidement</strong> à un environnement.</p>
+        <p>Mes expériences professionnelles m'ont apprises beaucoup tant sur le <strong>suivi de projet</strong> avec des <strong>deadlines</strong> serrées que sur
+        la <strong>programmation</strong> lors de mon passage dans le nucléaire.</p>
+        <p class="last-parag">Elles ont fait de moi quelqu'un de <strong>polyvalent</strong> et <strong>qui s'adapte rapidement</strong> à un environnement.</p>
       </div>
     </div>
-        <%= link_to 'Télécharger le CV', download_path, download: 'CV_Kévin_Rossi_FR.pdf' %>
   </div>
 
   <div class="card-about" id="projects_section">
     <h2>Réalisations</h2>
-    <div class="caroussel">
-      <%= image_tag "photo_profile.jpg", alt: "Caroussel", id: "caroussel" %>
-    </div>
-    <div class="description">
-      <h3>Best United</h3>
-        <p>Plateforme de vente de sneakers pour encourager le commerce local.</p>
-        <p>Gestion des stocks pour les commerçants.</p>
-        <p>Août 2024</p>
+    <div class="projects">
+      <div class="caroussel">
+        <%= image_tag "photo_profile.jpg", alt: "Caroussel", id: "caroussel" %>
+      </div>
+      <div class="description">
+        <h3>Best United</h3>
+          <p>Plateforme de vente de sneakers pour encourager le commerce local.</p>
+          <p>Gestion des stocks pour les commerçants.</p>
+          <p>Août 2024</p>
+      </div>
     </div>
   </div>
 
@@ -85,13 +88,14 @@
         <div class="form-group">
           <%= f.input :message, as: :text, label: "Message", placeholder: "Écrivez votre message ici...", required: true %>
         </div>
-        <div class="form-group">
-          <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+        <div class="form-group-btn">
+          <%= f.button :submit, "Envoyer", class: "btn" %>
         </div>
       <% end %>
     </div>
     </div>
     <div class="links-social">
+    <h3>Liens réseaux</h3>
       <ul>
         <div class="logo-social">
           <%= link_to "https://github.com/KevRo69" do %>
