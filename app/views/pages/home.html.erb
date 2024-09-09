@@ -55,7 +55,34 @@
   <div class="card-about" id="contact_section">
     <h2>Contact</h2>
     <div class="form">
-
+      <%= simple_form_for :contact, url: contacts_path, method: :post do |f| %>
+        <div class="form-pair">
+          <div class="form-group">
+            <%= f.input :first_name, label: "Prénom", required: true %>
+          </div>
+          <div class="form-group">
+            <%= f.input :last_name, label: "Nom", required: true %>
+          </div>
+        </div>
+        <div class="form-pair">
+          <div class="form-group">
+            <%= f.input :email, label: "Email", required: true %>
+          </div>
+          <div class="form-group">
+            <%= f.input :phone, label: "Téléphone", required: false %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.input :title, label: "Objet", required: true %>
+        </div>
+        <div class="form-group">
+          <%= f.input :message, as: :text, label: "Message", required: true %>
+        </div>
+        <div class="form-group">
+          <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
     </div>
     <div class="links-social">
       <ul>

@@ -1,0 +1,16 @@
+<% if flash.alert %>
+  <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+    <span>🎉 Votre message a bien été envoyé !</span>
+    <a data-bs-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+<% end %>
+<% if flash.notice %>
+  <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+    <span>😱 Un problème est survenu lors de l'envoi du message.</span>
+    <a data-bs-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+<% end %>
