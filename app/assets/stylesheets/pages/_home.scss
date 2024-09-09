@@ -16,9 +16,9 @@ body{
   display: flex;
   flex-direction: column;
   margin-top: 16px;
-  width: 50%;
+  width: 800px;
   padding: 16px;
-  height: 100vh;
+  height: auto;
 }
 
 .presentation {
@@ -42,7 +42,7 @@ body{
 }
 
 .card-about .photo {
-  width: 45%;
+  width: 200px;
 }
 
 .description h3 {
