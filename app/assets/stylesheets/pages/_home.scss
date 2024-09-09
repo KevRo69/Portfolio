@@ -10,7 +10,6 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
 }
 
 .card-about {
@@ -19,6 +18,7 @@ body{
   margin-top: 16px;
   width: 50%;
   padding: 16px;
+  height: 100vh;
 }
 
 .presentation {
@@ -53,8 +53,12 @@ body{
   justify-content: center;
   flex-direction: row;
   gap: 16px;
+  padding-left: 0;
   margin-top: 16px;
 }
+
+
+
 
 .top-btn svg {
   width: 64px;
@@ -63,6 +67,14 @@ body{
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+}
+
+a.top-btn {
+  color: green !important;
+}
+
+a.top-btn:hover {
+  color: rgb(126, 174, 126) !important;
 }
 
 #cv {
