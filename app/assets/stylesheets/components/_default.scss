@@ -5,3 +5,15 @@ a {
 li {
   list-style-type: none;
 }
+
+.fa-brands {
+  color: $blue;
+}
+
+.fa-brands:hover {
+  color: $light-blue;
+}
+
+abbr {
+  text-decoration: none !important;
+}
