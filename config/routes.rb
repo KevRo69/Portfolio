@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get 'download', to: 'downloads#show', as: 'download'
+  resources :contacts, only: [:create]
 end
