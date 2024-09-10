@@ -1,0 +1,18 @@
+  <div data-controller="carousel" class="card-about" id="projects_section">
+    <h2>Réalisations</h2>
+    <div class="carousel-container">
+      <button data-action="click->carousel#previous" class="carousel-control prev-control">&lt;</button>
+      <div data-carousel-target="item" class="carousel-item prev horizontal" id="portfolio">
+        <%= image_tag "carousel/portfolio.png", alt: "Previous Image" %>
+      </div>
+      <div data-carousel-target="item" class="carousel-item active" id="bestunited">
+        <%= image_tag "carousel/bestunited1.jpg", alt: "Current Image" %>
+      </div>
+      <div data-carousel-target="item" class="carousel-item next horizontal" id="datefaker">
+        <%= image_tag "carousel/datefaker1.png", alt: "Next Image" %>
+      </div>
+      <button data-action="click->carousel#next" class="carousel-control next-control">&gt;</button>
+    </div>
+    <div class="description" data-carousel-target="description">
+    </div>
+  </div>
