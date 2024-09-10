@@ -21,7 +21,7 @@
 }
 
 .carousel-item img {
-  width: 200px;
+  width: 150px;
   height: auto;
   object-fit: cover;
 }
@@ -30,6 +30,7 @@
   width: 500px;
   height: auto;
   object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .carousel-item.horizontal.active {

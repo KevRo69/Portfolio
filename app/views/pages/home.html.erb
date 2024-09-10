@@ -10,11 +10,11 @@
     <div class="presentation">
       <div class="paragraph">
         <p>Je m'appelle Kévin Rossi, je suis développeur web full-stack.</p>
-        <p>Ingénieur mécatronique de formation, j'ai passé 3 ans et demi à concevoir, construire, programmer et mettre en service des robots de contrôle non-destructif pour les centrales nucléaires.
+        <p><strong>Ingénieur mécatronique</strong> de formation, j'ai passé 3 ans et demi dans la <strong>Drôme</strong> à <strong>concevoir</strong>, <strong>construire</strong>, <strong>programmer</strong> et <strong>mettre en service</strong> des robots de contrôle non-destructif pour les centrales nucléaires.
         Bien que cela me plaisait, j'ai voulu découvrir une autre partie du monde, la Chine.</p>
-        <p>Après 2 mois et demi de formation en France et en Tchéquie, je suis partie 4 mois en Chine en tant qu'ingénieur méthodes automatisme début 2024.
+        <p>Après 2 mois et demi de formation en <strong>France</strong> et en <strong>Tchéquie</strong>, je suis parti 4 mois en <strong>Chine</strong> en tant qu'<strong>ingénieur méthodes automatisme</strong> début 2024.
         Mais il me manquait cette partie de programmation qui était très présente lors de mon premier travail.</p>
-        <p class="last-parag">C'est pourquoi j'ai décidé de me tourner vers le Dévelopmment Web pour me reconvertir, notamment avec Ruby on Rails et en suivant le bootcamp chez Le Wagon Lyon.</p>
+        <p class="last-parag">C'est pourquoi j'ai décidé de me tourner vers le <strong>Dévelopmment Web</strong> pour me reconvertir, notamment avec <strong>Ruby on Rails</strong> et en suivant le bootcamp chez <strong>Le Wagon Lyon</strong>.</p>
       </div>
       <%= image_tag "photo_profile.jpg", alt: "Photo profil", class: "photo" %>
     </div>
@@ -47,20 +47,22 @@
     </div>
   </div>
 
-  <div class="card-about" id="projects_section">
+  <div data-controller="carousel" class="card-about" id="projects_section">
     <h2>Réalisations</h2>
-    <div data-controller="carousel" class="carousel-container">
+    <div class="carousel-container">
       <button data-action="click->carousel#previous" class="carousel-control prev-control">&lt;</button>
-      <div data-carousel-target="item" class="carousel-item prev">
+      <div data-carousel-target="item" class="carousel-item prev" id="bestunited">
         <%= image_tag "carousel/bestunited1.jpg", alt: "Previous Image" %>
       </div>
-      <div data-carousel-target="item" class="carousel-item active">
+      <div data-carousel-target="item" class="carousel-item active" id="bestunited">
         <%= image_tag "carousel/bestunited2.jpg", alt: "Current Image" %>
       </div>
-      <div data-carousel-target="item" class="carousel-item next horizontal">
+      <div data-carousel-target="item" class="carousel-item next horizontal" id="datefaker">
         <%= image_tag "carousel/datefaker1.png", alt: "Next Image" %>
       </div>
       <button data-action="click->carousel#next" class="carousel-control next-control">&gt;</button>
+    </div>
+    <div class="description" data-carousel-target="description">
     </div>
   </div>
 
