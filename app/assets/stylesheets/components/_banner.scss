@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/Banner.png);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image-url('Banner.png');
 }
 
 .banner h1 {
