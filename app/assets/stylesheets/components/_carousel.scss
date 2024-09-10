@@ -1,0 +1,84 @@
+.carousel-container {
+  position: relative;
+  height: 400px; /* Set a height */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 200px; /* Adjust width based on your design */
+  height: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-item.horizontal.active img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-item.horizontal.active {
+  width: 500px;
+}
+
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(0);
+}
+
+.carousel-item.prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-110%);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.carousel-item.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(110%);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev-control {
+  right: 350px;
+}
+
+.next-control {
+  left: 350px;
+}

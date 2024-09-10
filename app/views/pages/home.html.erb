@@ -49,19 +49,18 @@
 
   <div class="card-about" id="projects_section">
     <h2>Réalisations</h2>
-    <div class="projects">
-      <div class="caroussel">
-        <%= image_tag "carrousel/bestunited1.jpg", alt: "Caroussel", id: "caroussel" %>
+    <div data-controller="carousel" class="carousel-container">
+      <button data-action="click->carousel#previous" class="carousel-control prev-control">&lt;</button>
+      <div data-carousel-target="item" class="carousel-item prev">
+        <%= image_tag "carousel/bestunited1.jpg", alt: "Previous Image" %>
       </div>
-      <div class="description">
-        <h3>Best United</h3>
-        <%= link_to "http://www.bestunited.me" do %>
-          <i class="fa-solid fa-link"></i> Lien (App mobile)
-        <% end %>
-        <p>Plateforme de vente de sneakers pour encourager le commerce local.</p>
-        <p>Gestion des stocks pour les commerçants avec scan de code-barre.</p>
-        <p>Août 2024</p>
+      <div data-carousel-target="item" class="carousel-item active">
+        <%= image_tag "carousel/bestunited2.jpg", alt: "Current Image" %>
       </div>
+      <div data-carousel-target="item" class="carousel-item next horizontal">
+        <%= image_tag "carousel/datefaker1.png", alt: "Next Image" %>
+      </div>
+      <button data-action="click->carousel#next" class="carousel-control next-control">&gt;</button>
     </div>
   </div>
 
