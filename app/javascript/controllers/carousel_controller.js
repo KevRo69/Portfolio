@@ -24,7 +24,7 @@ export default class extends Controller {
       item.classList.remove("prev", "active", "next")
 
       const bestunited = "<h3>Best United</h3><a href='http://www.bestunited.me', target='_blank'><i class='fa-solid fa-link'></i> Lien (App mobile)  </a><a href='https://www.youtube.com', target='_blank'><i class='fa-solid fa-video'></i> Vidéo pitch</a><p>Plateforme de vente de sneakers pour encourager le commerce local.</p><p>Gestion des stocks pour les commerçants avec scan de code-barre.</p><p>Projet final Le Wagon - Août 2024</p>"
-      const datefaker = "<h3>Date Faker</h3><a href='#'><i class='fa-solid fa-link'></i> Lien</a><p>Plateforme fictive type marketplace pour louer de faux dates pour des occasions spéciales.</p><p>Inscription, location et réservation avec formulaire.</p><p>Projet Le Wagon - Août 2024</p>"
+      const datefaker = "<h3>Date Faker</h3><a href='#'><i class='fa-solid fa-link'></i> Lien</a><p>Plateforme fictive type marketplace pour louer de faux dates.</p><p>Inscription, location et réservation avec formulaire.</p><p>Projet Le Wagon - Août 2024</p>"
       const portfolio = "<h3>Portfolio (ce site)</h3><a href='#'><i class='fa-solid fa-link'></i> Lien</a><p>Mon portfolio sur lequel vous êtes actuellement.</p><p>Informations relatives à mes projets, contact en bas du site.</p><p>Septembre 2024</p>"
 
       if (index === this.activeIndex) {
