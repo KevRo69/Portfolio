@@ -1,8 +1,9 @@
 <div class="main-container">
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/Banner.png);">
-<h1>Kévin ROSSI</h1>
-<h2>Développeur Fullstack Ruby on Rails</h2>
+  <h1>Kévin ROSSI</h1>
+  <h2>Développeur Fullstack </h2>
+  <h2>Ruby on Rails</h2>
 </div>
 
   <div class="card-about" id='about_section'>
@@ -31,8 +32,8 @@
 
         <h3>Développement Web</h3>
           <p><strong>Backend :</strong>  Ruby on Rails</p>
-          <p><strong>Frontend :</strong> HTML / CSS / Stimulus.js</p>
-          <p><strong>DB :</strong> PostgreSQL / SQLite</p>
+          <p><strong>Frontend :</strong> HTML/CSS/Stimulus.js</p>
+          <p><strong>DB :</strong> PostgreSQL/SQLite</p>
 
         <h3>Atouts</h3>
           <p><strong>Gestion du temps : </strong>Organisé</p>
@@ -47,24 +48,7 @@
     </div>
   </div>
 
-  <div data-controller="carousel" class="card-about" id="projects_section">
-    <h2>Réalisations</h2>
-    <div class="carousel-container">
-      <button data-action="click->carousel#previous" class="carousel-control prev-control">&lt;</button>
-      <div data-carousel-target="item" class="carousel-item prev horizontal" id="portfolio">
-        <%= image_tag "carousel/portfolio.png", alt: "Previous Image" %>
-      </div>
-      <div data-carousel-target="item" class="carousel-item active" id="bestunited">
-        <%= image_tag "carousel/bestunited1.jpg", alt: "Current Image" %>
-      </div>
-      <div data-carousel-target="item" class="carousel-item next horizontal" id="datefaker">
-        <%= image_tag "carousel/datefaker1.png", alt: "Next Image" %>
-      </div>
-      <button data-action="click->carousel#next" class="carousel-control next-control">&gt;</button>
-    </div>
-    <div class="description" data-carousel-target="description">
-    </div>
-  </div>
+  <%= render "carousel" %>
 
   <div class="card-about" id="contact_section">
     <h2>Contact</h2>
