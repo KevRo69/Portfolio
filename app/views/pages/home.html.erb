@@ -7,13 +7,13 @@
 </div>
 
   <div class="card-about" id='about_section'>
-    <h2>À propos de moi</h2>
+    <h2>Qui suis-je ?</h2>
     <div class="presentation">
       <div class="paragraph">
         <p>Je m'appelle Kévin Rossi, je suis développeur web full-stack.</p>
-        <p><strong>Ingénieur mécatronique</strong> de formation, j'ai passé 3 ans et demi dans la <strong>Drôme</strong> à <strong>concevoir</strong>, <strong>construire</strong>, <strong>programmer</strong> et <strong>mettre en service</strong> des robots de contrôle non-destructif pour les centrales nucléaires.
+        <p><strong>Ingénieur mécatronique</strong> de formation, j'ai passé 3 ans et demi dans la Drôme à <strong>concevoir</strong>, construire, <strong>programmer</strong> et mettre en service des robots de contrôle non-destructif pour les centrales nucléaires.
         Bien que cela me plaisait, j'ai voulu découvrir une autre partie du monde, la Chine.</p>
-        <p>Après 2 mois et demi de formation en <strong>France</strong> et en <strong>Tchéquie</strong>, je suis parti 4 mois en <strong>Chine</strong> en tant qu'<strong>ingénieur méthodes automatisme</strong> début 2024.
+        <p>Après 2 mois et demi de formation en <strong>France</strong> et en <strong>Tchéquie</strong>, je suis parti 4 mois en <strong>Chine</strong> en tant qu'ingénieur méthodes automatisme début 2024.
         Mais il me manquait cette partie de programmation qui était très présente lors de mon premier travail.</p>
         <p class="last-parag">C'est pourquoi j'ai décidé de me tourner vers le <strong>Dévelopmment Web</strong> pour me reconvertir, notamment avec <strong>Ruby on Rails</strong> et en suivant le bootcamp chez <strong>Le Wagon Lyon</strong>.</p>
       </div>
@@ -48,31 +48,16 @@
     </div>
   </div>
 
-  <%= render "carousel" %>
-
   <div class="card-about" id="contact_section">
     <h2>Contact</h2>
     <div class="form">
       <%= simple_form_for :contact, url: contacts_path, method: :post do |f| %>
-        <div class="form-pair">
           <div class="form-group">
-            <%= f.input :first_name, label: "Prénom", required: true %>
+            <%= f.input :name, label: "Nom", required: true %>
           </div>
-          <div class="form-group">
-            <%= f.input :last_name, label: "Nom",  required: true %>
-          </div>
-        </div>
-        <div class="form-pair">
           <div class="form-group">
             <%= f.input :email, label: "Email", required: true %>
           </div>
-          <div class="form-group">
-            <%= f.input :phone, label: "Téléphone", required: false %>
-          </div>
-        </div>
-        <div class="form-group">
-          <%= f.input :title, label: "Objet", required: true %>
-        </div>
         <div class="form-group">
           <%= f.input :message, as: :text, label: "Message", placeholder: "Écrivez votre message ici...", required: true %>
         </div>
@@ -97,5 +82,8 @@
         </div>
       </ul>
     </div>
+
+  <%= render "pages/carousel" %>
+
   </div>
 </div>

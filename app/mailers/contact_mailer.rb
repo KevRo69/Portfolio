@@ -5,7 +5,7 @@ class ContactMailer < ApplicationMailer
     mail(
       to: 'kevinrossi@free.fr',
       from: @contact.email,
-      subject: "#{@contact.title}"
+      subject: "Vous avez reçu un message de #{@contact.name}"
     )
   end
 end
