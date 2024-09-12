@@ -7,4 +7,36 @@
   margin-top: auto;
   background-color: $blue;
   color: white;
+  margin-top: 16px;
+}
+
+.fa-brands.fa-square-github {
+  color: white;
+}
+
+.fa-brands.fa-square-github:hover {
+  color: $light-blue;
+}
+
+
+.fa-brands.fa-linkedin {
+  color: white;
+}
+
+
+.fa-brands.fa-linkedin:hover {
+  color: $light-blue;
+}
+
+.links-social ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  padding-left: 0;
+  margin: 16px 0;
+}
+
+.links-social h3{
+  color: white;
 }
