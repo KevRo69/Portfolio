@@ -81,18 +81,16 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'https://portfolio-kevin-rossi-e87ae7df0605.herokuapp.com/', protocol: 'https' }
+  config.action_mailer.default_url_options = { host: 'portfolio-kevin-rossi-e87ae7df0605.herokuapp.com', protocol: 'https' }
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'https://portfolio-kevin-rossi-e87ae7df0605.herokuapp.com/',
+    domain:               'herokuapp.com',
     user_name:            ENV['GMAIL_USERNAME'],
     password:             ENV['GMAIL_PASSWORD'],
     authentication:       'plain',
     enable_starttls_auto: true
   }
-
-  config.action_mailer.default_url_options = { host: 'yourdomain.com' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).

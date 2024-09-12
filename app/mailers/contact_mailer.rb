@@ -6,7 +6,7 @@ class ContactMailer < ApplicationMailer
 
     mail(
       to: 'kevinrossi@free.fr',
-      from: @contact.email,
+      reply_to: @contact.email,
       subject: "Vous avez reçu un message de #{@contact.name}"
     )
   end
