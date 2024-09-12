@@ -7,15 +7,22 @@ a:hover {
   color: $light-blue;
 }
 
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style-type: none;
 }
 
-.fa-brands {
+
+.fa-brands, .fa-solid {
   color: $blue;
 }
 
-.fa-brands:hover {
+.footer .fa-brands:hover {
   color: $light-blue;
 }
 

@@ -27,6 +27,17 @@ h3 {
   min-height: 100vh;
 }
 
+.banner-between {
+  background-color: $blue;
+  color: white;
+  height: 30vh;
+  width: 100%;
+}
+
+.banner-between h2{
+  color: white;
+}
+
 .card-about {
   display: flex;
   flex-direction: column;
@@ -40,9 +51,8 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .paragraph {
@@ -57,7 +67,7 @@ h3 {
 }
 
 .card-about .photo {
-  height: 384px;
+  height: 446px;
 }
 
 .description h3 {
@@ -80,9 +90,29 @@ h3 {
 
 .assets {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+  height: 100%;
+}
+
+.skills {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
+  gap: 16px;
+}
+
+.skills i.fa-brands, .skills i.fa-solid {
+  width: 16px;
+}
+
+.column-skill {
+  width: 45%;
+  padding: 16px;
+  border: 2px solid $blue;
+  border-radius: 8px;
   height: 100%;
 }
 
@@ -96,15 +126,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.links-social ul{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 16px;
-  padding-left: 0;
-  margin-top: 16px;
 }
 
 .top-btn svg {
@@ -153,6 +174,19 @@ a.top-btn:hover {
   .presentation {
     align-items: center;
     flex-direction: column;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .assets {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .column-skill {
+    width: 100%;
   }
 
   #cv {
