@@ -7,7 +7,7 @@ class ContactMailer < ApplicationMailer
     mail(
       to: 'kevinrossi@free.fr',
       reply_to: @contact.email,
-      subject: "Vous avez reçu un message de #{@contact.name}"
+      subject: "[Portfolio] Nouveau message de #{@contact.name}"
     )
   end
 end
