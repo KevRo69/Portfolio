@@ -1,4 +1,6 @@
 class ContactMailer < ApplicationMailer
+  default from: 'kevinou69400@gmail.com'
+
   def send_contact_email
     @contact = params[:contact]
 
