@@ -30,7 +30,7 @@ h3 {
 .banner-between {
   background-color: $blue;
   color: white;
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,15 @@ h3 {
   align-items: center;
   margin-top: 16px;
   padding: 16px;
+
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 720px;
 }
 
 .banner-between h2{
@@ -77,8 +86,12 @@ h3 {
 }
 
 .description h3 {
-  margin: 8px 0 0 0;
+  margin: 8px 0;
   padding: 0;
+}
+
+.description .links {
+  margin-bottom: 8px;
 }
 
 .description p {
@@ -120,6 +133,10 @@ h3 {
   border: 2px solid $blue;
   border-radius: 8px;
   height: 100%;
+  margin-top: 8px;
+  i {
+    margin-right: 8px;
+  }
 }
 
 .assets p {
@@ -197,6 +214,10 @@ a.top-btn:hover {
 
   .banner-between {
     height: 100%;
+  }
+
+  .banner-text {
+    width: 280px;
   }
 
   #cv {
